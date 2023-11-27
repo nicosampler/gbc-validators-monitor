@@ -1,0 +1,11 @@
+/node_modules
+
+src/db/*
+!src/db/.gitkeep
+
+dist
+
+.env*
+!.env.example
+
+prisma/dev.db
