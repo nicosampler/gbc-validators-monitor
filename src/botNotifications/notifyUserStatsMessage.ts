@@ -35,10 +35,10 @@ export async function notifyUserStatsMessage(
 
   const msg =
     "`" +
-    `Validators: ${totalValidators}
-  🟢 ${status?.active || 0} 🟡 ${status?.inactiveIds.length || 0}  🚫 ${
+    `Validators: ${totalValidators}.
+  ${status?.active || 0} 🟢 | ${status?.inactiveIds.length || 0} 🟡 | ${
       status?.slashedIds.length || 0
-    }      
+    } 🚫      
 
 Attestations: ${user.last100AttestedPercentage || "-"}%
 Balance: ${totalBalance.toFixed(3)} GNO ($${totalBalancePrice}) 
